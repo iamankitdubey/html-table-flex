@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    background-image: url(./deer-animal.jpg);
+
+}
+header{
+    color: rgb(248, 248, 250);
+    font-weight: bolder;
+    padding: 5px;
+    font-size: 130%;
+    text-align: center;
+}
+.main{
+    height: 85%;
+    width: 35%;
+    margin-left: 30%;
+    box-shadow: 0px 10px 10px rgb(88, 87, 87);
+    border-radius: 8px;
+    background-color: white;
+    font-size: .7rem;
+    font-weight: bolder;
+    background-color:blanchedalmond ;
+    padding: 2%;
+   
+}
+input{
+    border-color: lightblue;
+}
+textarea{
+    border-radius: 5px;
+    border-color: lightblue;
+}
+button{
+    color: white;
+    height: 30px;
+    width: 30%;
+    border: 1px;
+    border-radius: 30px;
+    margin-left: 33%;
+    margin-top: 5%;
+    background-color: rgb(200, 107, 218);  
+}

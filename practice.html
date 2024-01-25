@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>practice</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <style>
+    *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.div-card2{
+    border: 1px black;
+    position: relative;
+    height: 90vh;
+    width: 90vw;
+    border-radius: 10px;
+    box-shadow: 5px 10px 10px grey;
+}
+.div-header{
+    height: 10vh;
+    width: 100%;
+    background-color: rgb(62, 62, 248);
+    border-radius: 10px 10px 0px 0px;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    font-size: 2rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.div-body1{
+    height: 45vh;
+    width: 100%;
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.first-box{
+    height: 35vh;
+    width: 15vw;
+    /* border: 1px solid black; */
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+     align-items: center;
+     font-size: 2rem;
+     background-color: #06161d;
+     color: lightblue;
+}
+.div-body2{
+    height: 25vh;
+    width: 100%;
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.second-box{
+    height: 15vh;
+    width: 7vw;
+    /* border: 1px solid black; */
+    border-radius: 10px;
+    /* display: flex; */
+    padding-top: 2%;
+    text-align: center;
+     font-size: 1rem;
+     background-color: lightblue;
+     color:  black;
+     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.div-footer{
+    height: 10vh;
+    width: 100%;
+    background-color: lightblue;
+    position: absolute;
+    bottom: 0;
+    border-radius: 0px 0px 10px 10px;
+
+}
+@media only screen and (max-width:431px ){
+   .div-body1{
+    flex-direction: column;
+   }
+   .first-box{
+       width: 90%;
+   }
+   .div-body2{
+    flex-direction: column;
+   }
+   .second-box{
+       width: 90%;
+   }
+}
+
+    </style>
+</head>
+<body>
+      <div class="div-card2">
+          <div class="div-header">CARD</div>
+           
+          <div class="div-body1">
+            <div class="first-box"><i class="fa fa-code"></i>&nbsp; CODE</div>
+            <div class="first-box"><i class="fa fa-coffee"></i>&nbsp;COFFEE</div>
+            <div class="first-box"><i class="fa fa-headphones">&nbsp;</i>MUSIC</div>
+          </div>
+          <div class="div-body2">
+             <div class="second-box"><i class="fa-regular fa-sun"></i><br>Sun</div>
+             <div class="second-box"><i class="fa fa-users"></i><br>Friend</div>
+             <div class="second-box"><i class="fa fa-suitcase"></i><br>Travel</div>
+             <div class="second-box"><i class="fa fa-film"></i><br> Movie</div>
+             <div class="second-box"><i class="fa-solid fa-tree"></i><br> Nature</div>
+          </div>
+          <div class="div-footer"></div>
+
+      </div>
+</body>
+</html>

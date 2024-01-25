@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>student survey</title>
+    <link rel="stylesheet" href="std survey.css">
+    <script>
+        function areaFocus(className){
+           document.getElementById(className).style.backgroundColor="lightyellow";
+        }
+        function areaOutOfFocus(className){
+           document.getElementById(className).style.backgroundColor="transparent";
+        }
+    </script>
+</head>
+<body>
+    <main>     
+        <div class="container">
+           <div class="main-box">
+                 <header>
+                     <h2>STUDENT SURVEY</h2>
+                 </header>
+                 <div class="details">
+                     <div class="sch" id="schd">
+                         <label for="sch-name">School Name</label>
+                         <input type="text" id="sch-name" name="sch-name" onfocus="areaFocus('schd')" onblur="areaOutOfFocus('schd')">
+                     </div><br>
+                     <div class="stu-name" id="stud">
+                         <label for="stu">Student Name</label><br>
+                         <div class="name-box">
+                         <input type="text" id="stu" name="stu-name" placeholder="first name" onfocus="areaFocus('stud')" onblur="areaOutOfFocus('stud')">
+                         <input type="text" id="stu" name="stu-name" placeholder="last name" onfocus="areaFocus('stud')" onblur="areaOutOfFocus('stud')">
+                        </div>
+                     </div><br>
+                     <div class="date" id="dated">
+                         <label for="date">Date</label><br>
+                         <input type="date" id="date" onfocus="areaFocus('dated')" onblur="areaOutOfFocus('dated')">
+                     </div><br>
+                     <div class="time" id="timed">
+                         <label for="time">How long have you been a student here?</label><br><br>
+                         <select id="time" style="padding: 7px;" onfocus="areaFocus('timed')" onblur="areaOutOfFocus('timed')">
+                             <option value="">please select</option>
+                             <option value="">less than a month</option>
+                             <option value="">1-6 months</option>
+                             <option value="">6 months to 1 year</option>
+                             <option value="">more than 1 year</option>
+                             <option value="">1-3 year</option>
+                             <option value="">more than 3 year</option>
+                         </select>
+                     </div>
+                     <br><br>
+                     <hr><br><br>
+                     <div class="">
+                         <p style="font-weight:bold;">Please rate the following aspects of your education.</p><br><br>
+     
+                         <div class="table-one" id="table-oned">
+                             <label for="">Curriculum and classes for the term</label><br><br>
+                             <div class="table-container">
+                                 <table cellspacing="0" cellpadding="10" >
+                                     <tr>
+                                         <th style="border: none;"></th>
+                                         <th>strongly disagree</th>
+                                         <th>disagree</th>
+                                         <th>neutral</th>
+                                         <th>agree</th>
+                                         <th>strongly agree</th>
+                                     </tr>
+                                     <tr for="radio1">
+                                         <th>The class descriptions accurately described the content.</th>
+                                         <td><input type="radio" name="radio1" onfocus="areaFocus('table-oned')" onblur="areaOutOfFocus('table-oned')"/></td>
+                                         <td><input type="radio" name="radio1" onfocus="areaFocus('table-oned')" onblur="areaOutOfFocus('table-oned')"/></td>
+                                         <td><input type="radio" name="radio1" onfocus="areaFocus('table-oned')" onblur="areaOutOfFocus('table-oned')"/></td>
+                                         <td><input type="radio" name="radio1" onfocus="areaFocus('table-oned')" onblur="areaOutOfFocus('table-oned')"/></td>
+                                         <td><input type="radio" name="radio1" onfocus="areaFocus('table-oned')" onblur="areaOutOfFocus('table-oned')"/></td>
+                                     </tr>
+                                     <tr for="radio2">
+                                         <th>I was academically prepared for the classes. </th>
+                                         <td><input type="radio" name="radio2" onfocus="areaFocus('table-oned')" onblur="areaOutOfFocus('table-oned')"/></td>
+                                         <td><input type="radio" name="radio2" onfocus="areaFocus('table-oned')" onblur="areaOutOfFocus('table-oned')"/></td>
+                                         <td><input type="radio" name="radio2" onfocus="areaFocus('table-oned')" onblur="areaOutOfFocus('table-oned')"/></td>
+                                         <td><input type="radio" name="radio2" onfocus="areaFocus('table-oned')" onblur="areaOutOfFocus('table-oned')"/></td>
+                                         <td><input type="radio" name="radio2" onfocus="areaFocus('table-oned')" onblur="areaOutOfFocus('table-oned')"/></td>
+                                     </tr>
+                                     <tr for="radio3">
+                                         <th>The class sizes were appropriate. </th>
+                                         <td><input type="radio" name="radio3" onfocus="areaFocus('table-oned')" onblur="areaOutOfFocus('table-oned')"/></td>
+                                         <td><input type="radio" name="radio3" onfocus="areaFocus('table-oned')" onblur="areaOutOfFocus('table-oned')"/></td>
+                                         <td><input type="radio" name="radio3" onfocus="areaFocus('table-oned')" onblur="areaOutOfFocus('table-oned')"/></td>
+                                         <td><input type="radio" name="radio3" onfocus="areaFocus('table-oned')" onblur="areaOutOfFocus('table-oned')"/></td>
+                                         <td><input type="radio" name="radio3" onfocus="areaFocus('table-oned')" onblur="areaOutOfFocus('table-oned')"/></td>
+                                     </tr>
+                                     <tr for="radio4">
+                                         <th>The classes started and ended on time. </th>
+                                         <td><input type="radio" name="radio4" onfocus="areaFocus('table-oned')" onblur="areaOutOfFocus('table-oned')"/></td>
+                                         <td><input type="radio" name="radio4" onfocus="areaFocus('table-oned')" onblur="areaOutOfFocus('table-oned')"/></td>
+                                         <td><input type="radio" name="radio4" onfocus="areaFocus('table-oned')" onblur="areaOutOfFocus('table-oned')"/></td>
+                                         <td><input type="radio" name="radio4" onfocus="areaFocus('table-oned')" onblur="areaOutOfFocus('table-oned')"/></td>
+                                         <td><input type="radio" name="radio4" onfocus="areaFocus('table-oned')" onblur="areaOutOfFocus('table-oned')"/></td>
+                                     </tr>
+                                     <tr for="radio5">
+                                         <th>The classes increased my knowledge of the subject matter. </th>
+                                         <td><input type="radio" name="radio5" onfocus="areaFocus('table-oned')" onblur="areaOutOfFocus('table-oned')"/></td>
+                                         <td><input type="radio" name="radio5" onfocus="areaFocus('table-oned')" onblur="areaOutOfFocus('table-oned')"/></td>
+                                         <td><input type="radio" name="radio5" onfocus="areaFocus('table-oned')" onblur="areaOutOfFocus('table-oned')"/></td>
+                                         <td><input type="radio" name="radio5" onfocus="areaFocus('table-oned')" onblur="areaOutOfFocus('table-oned')"/></td>
+                                         <td><input type="radio" name="radio5" onfocus="areaFocus('table-oned')" onblur="areaOutOfFocus('table-oned')"/></td>
+                                     </tr>
+                                     <tr for="radio6">
+                                         <th>The overall quality of the classes was excellent. </th>
+                                         <td><input type="radio" name="radio6" onfocus="areaFocus('table-oned')" onblur="areaOutOfFocus('table-oned')"/></td>
+                                         <td><input type="radio" name="radio6" onfocus="areaFocus('table-oned')" onblur="areaOutOfFocus('table-oned')"/></td>
+                                         <td><input type="radio" name="radio6" onfocus="areaFocus('table-oned')" onblur="areaOutOfFocus('table-oned')"/></td>
+                                         <td><input type="radio" name="radio6" onfocus="areaFocus('table-oned')" onblur="areaOutOfFocus('table-oned')"/></td>
+                                         <td><input type="radio" name="radio6" onfocus="areaFocus('table-oned')" onblur="areaOutOfFocus('table-oned')"/></td>
+                                     </tr>
+                                     <tr for="radio7">
+                                         <th>I would recommend these classes to other students. </th>
+                                         <td><input type="radio" name="radio7" onfocus="areaFocus('table-oned')" onblur="areaOutOfFocus('table-oned')"/></td>
+                                         <td><input type="radio" name="radio7" onfocus="areaFocus('table-oned')" onblur="areaOutOfFocus('table-oned')"/></td>
+                                         <td><input type="radio" name="radio7" onfocus="areaFocus('table-oned')" onblur="areaOutOfFocus('table-oned')"/></td>
+                                         <td><input type="radio" name="radio7" onfocus="areaFocus('table-oned')" onblur="areaOutOfFocus('table-oned')"/></td>
+                                         <td><input type="radio" name="radio7" onfocus="areaFocus('table-oned')" onblur="areaOutOfFocus('table-oned')"/></td>
+                                     </tr>
+                                 </table>
+                             </div>
+                         </div><br><br>
+                         <div class="table-two" id="table-twod">
+                             <label for="">Materials</label><br><br>
+                             <div class="table-container">
+                             <table cellspacing="0" cellpadding="10">
+                                 <tr>
+                                     <th style="border: none;"></th>
+                                     <th>strongly disagree</th>
+                                     <th>disagree</th>
+                                     <th>neutral</th>
+                                     <th>agree</th>
+                                     <th>strongly agree</th>
+                                 </tr>
+                                 <tr for="radio8">
+                                     <th>The objectives and requirements for the classes were clearly stated. </th>
+                                     <td class="dot"><input type="radio" name="radio8" onfocus="areaFocus('table-twod')" onblur="areaOutOfFocus('table-twod')"/></td>
+                                     <td class="dot"><input type="radio" name="radio8" onfocus="areaFocus('table-twod')" onblur="areaOutOfFocus('table-twod')"/></td>
+                                     <td class="dot"><input type="radio" name="radio8" onfocus="areaFocus('table-twod')" onblur="areaOutOfFocus('table-twod')"/></td>
+                                     <td class="dot"><input type="radio" name="radio8" onfocus="areaFocus('table-twod')" onblur="areaOutOfFocus('table-twod')"/></td>
+                                     <td class="dot"><input type="radio" name="radio8" onfocus="areaFocus('table-twod')" onblur="areaOutOfFocus('table-twod')"/></td>
+                                 </tr>
+                                 <tr for="radio9">
+                                     <th>The textbooks and learning materials were relevant and useful. </th>
+                                     <td class="dot"><input type="radio" name="radio9" onfocus="areaFocus('table-twod')" onblur="areaOutOfFocus('table-twod')"/></td>
+                                     <td class="dot"><input type="radio" name="radio9" onfocus="areaFocus('table-twod')" onblur="areaOutOfFocus('table-twod')"/></td>
+                                     <td class="dot"><input type="radio" name="radio9" onfocus="areaFocus('table-twod')" onblur="areaOutOfFocus('table-twod')"/></td>
+                                     <td class="dot"><input type="radio" name="radio9" onfocus="areaFocus('table-twod')" onblur="areaOutOfFocus('table-twod')"/></td>
+                                     <td class="dot"><input type="radio" name="radio9" onfocus="areaFocus('table-twod')" onblur="areaOutOfFocus('table-twod')"/></td>
+                                 </tr>
+                                 <tr for="radio10">
+                                     <th>Tests and assignments were based on material covered in each class. </th>
+                                     <td class="dot"><input type="radio" name="radio10" onfocus="areaFocus('table-twod')" onblur="areaOutOfFocus('table-twod')"/></td>
+                                     <td class="dot"><input type="radio" name="radio10" onfocus="areaFocus('table-twod')" onblur="areaOutOfFocus('table-twod')"/></td>
+                                     <td class="dot"><input type="radio" name="radio10" onfocus="areaFocus('table-twod')" onblur="areaOutOfFocus('table-twod')"/></td>
+                                     <td class="dot"><input type="radio" name="radio10" onfocus="areaFocus('table-twod')" onblur="areaOutOfFocus('table-twod')"/></td>
+                                     <td class="dot"><input type="radio" name="radio10" onfocus="areaFocus('table-twod')" onblur="areaOutOfFocus('table-twod')"/></td>
+                                 </tr>
+                             </table>
+                         </div>
+                         </div><br><br>
+                         <div class="table-three" id="table-threed">
+                             <label for="">Instruction</label><br><br>
+                             <div class="table-container">
+                             <table cellspacing="0" cellpadding="10">
+                                 <tr>
+                                     <th style="border: none;"></th>
+                                     <th>strongly disagree</th>
+                                     <th>disagree</th>
+                                     <th>neutral</th>
+                                     <th>agree</th>
+                                     <th>strongly agree</th>
+                                 </tr>
+                                 <tr for="radio11">
+                                     <th>The instructors were qualified to teach these classes. </th>
+                                     <td><input type="radio" name="radio11" onfocus="areaFocus('table-threed')" onblur="areaOutOfFocus('table-threed')"/></td>
+                                     <td><input type="radio" name="radio11" onfocus="areaFocus('table-threed')" onblur="areaOutOfFocus('table-threed')"/></td>
+                                     <td><input type="radio" name="radio11" onfocus="areaFocus('table-threed')" onblur="areaOutOfFocus('table-threed')"/></td>
+                                     <td><input type="radio" name="radio11" onfocus="areaFocus('table-threed')" onblur="areaOutOfFocus('table-threed')"/></td>
+                                     <td><input type="radio" name="radio11" onfocus="areaFocus('table-threed')" onblur="areaOutOfFocus('table-threed')"/></td>
+                                 </tr>
+                                 <tr for="radio12">
+                                     <th>The instructors demonstrated enthusiasm for the subject matter. </th>
+                                     <td><input type="radio" name="radio12" onfocus="areaFocus('table-threed')" onblur="areaOutOfFocus('table-threed')"/></td>
+                                     <td><input type="radio" name="radio12" onfocus="areaFocus('table-threed')" onblur="areaOutOfFocus('table-threed')"/></td>
+                                     <td><input type="radio" name="radio12" onfocus="areaFocus('table-threed')" onblur="areaOutOfFocus('table-threed')"/></td>
+                                     <td><input type="radio" name="radio12" onfocus="areaFocus('table-threed')" onblur="areaOutOfFocus('table-threed')"/></td>
+                                     <td><input type="radio" name="radio12" onfocus="areaFocus('table-threed')" onblur="areaOutOfFocus('table-threed')"/></td>
+                                 </tr>
+                                 <tr for="radio13">
+                                     <th>The instructors were available and helpful to students outside of class. </th>
+                                     <td><input type="radio" name="radio13" onfocus="areaFocus('table-threed')" onblur="areaOutOfFocus('table-threed')"/></td>
+                                     <td><input type="radio" name="radio13" onfocus="areaFocus('table-threed')" onblur="areaOutOfFocus('table-threed')"/></td>
+                                     <td><input type="radio" name="radio13" onfocus="areaFocus('table-threed')" onblur="areaOutOfFocus('table-threed')"/></td>
+                                     <td><input type="radio" name="radio13" onfocus="areaFocus('table-threed')" onblur="areaOutOfFocus('table-threed')"/></td>
+                                     <td><input type="radio" name="radio13" onfocus="areaFocus('table-threed')" onblur="areaOutOfFocus('table-threed')"/></td>
+                                 </tr>
+                             </table>
+                         </div>
+                         </div><br><br>
+                         <div class="table-four" id="table-fourd">
+                             <label for="">School environment</label><br><br>
+                             <div class="table-container">
+                             <table cellspacing="0" cellpadding="10">
+                                 <tr>
+                                     <th style="border: none;"></th>
+                                     <th>strongly disagree</th>
+                                     <th>disagree</th>
+                                     <th>neutral</th>
+                                     <th>agree</th>
+                                     <th>strongly agree</th>
+                                 </tr>
+                                 <tr for="radio14">
+                                     <th>The instructors were qualified to teach these classes. </th>
+                                     <td><input type="radio" name="radio14" onfocus="areaFocus('table-fourd')" onblur="areaOutOfFocus('table-fourd')"/></td>
+                                     <td><input type="radio" name="radio14" onfocus="areaFocus('table-fourd')" onblur="areaOutOfFocus('table-fourd')"/></td>
+                                     <td><input type="radio" name="radio14" onfocus="areaFocus('table-fourd')" onblur="areaOutOfFocus('table-fourd')"/></td>
+                                     <td><input type="radio" name="radio14" onfocus="areaFocus('table-fourd')" onblur="areaOutOfFocus('table-fourd')"/></td>
+                                     <td><input type="radio" name="radio14" onfocus="areaFocus('table-fourd')" onblur="areaOutOfFocus('table-fourd')"/></td>
+                                 </tr>
+                                 <tr for="radio15">
+                                     <th>The instructors demonstrated enthusiasm for the subject matter. </th>
+                                     <td><input type="radio" name="radio15" onfocus="areaFocus('table-fourd')" onblur="areaOutOfFocus('table-fourd')"/></td>
+                                     <td><input type="radio" name="radio15" onfocus="areaFocus('table-fourd')" onblur="areaOutOfFocus('table-fourd')"/></td>
+                                     <td><input type="radio" name="radio15" onfocus="areaFocus('table-fourd')" onblur="areaOutOfFocus('table-fourd')"/></td>
+                                     <td><input type="radio" name="radio15" onfocus="areaFocus('table-fourd')" onblur="areaOutOfFocus('table-fourd')"/></td>
+                                     <td><input type="radio" name="radio15" onfocus="areaFocus('table-fourd')" onblur="areaOutOfFocus('table-fourd')"/></td>
+                                 </tr>
+                                 <tr for="radio16">
+                                     <th>The instructors were available and helpful to students outside of class. </th>
+                                     <td><input type="radio" name="radio16" onfocus="areaFocus('table-fourd')" onblur="areaOutOfFocus('table-fourd')"/></td>
+                                     <td><input type="radio" name="radio16" onfocus="areaFocus('table-fourd')" onblur="areaOutOfFocus('table-fourd')"/></td>
+                                     <td><input type="radio" name="radio16" onfocus="areaFocus('table-fourd')" onblur="areaOutOfFocus('table-fourd')"/></td>
+                                     <td><input type="radio" name="radio16" onfocus="areaFocus('table-fourd')" onblur="areaOutOfFocus('table-fourd')"/></td>
+                                     <td><input type="radio" name="radio16" onfocus="areaFocus('table-fourd')" onblur="areaOutOfFocus('table-fourd')"/></td>
+                                 </tr>
+                                 <tr for="radio17">
+                                     <th>The instructors were available and helpful to students outside of class. </th>
+                                     <td><input type="radio" name="radio17" onfocus="areaFocus('table-fourd')" onblur="areaOutOfFocus('table-fourd')"/></td>
+                                     <td><input type="radio" name="radio17" onfocus="areaFocus('table-fourd')" onblur="areaOutOfFocus('table-fourd')"/></td>
+                                     <td><input type="radio" name="radio17" onfocus="areaFocus('table-fourd')" onblur="areaOutOfFocus('table-fourd')"/></td>
+                                     <td><input type="radio" name="radio17" onfocus="areaFocus('table-fourd')" onblur="areaOutOfFocus('table-fourd')"/></td>
+                                     <td><input type="radio" name="radio17" onfocus="areaFocus('table-fourd')" onblur="areaOutOfFocus('table-fourd')"/></td>
+                                 </tr>
+                             </table>
+                         </div>
+                         </div>
+                     </div>
+                     <br><br>
+                     <hr><br><br>
+                     <div class="ques" id="quesd">
+                         <p>How likely are you to recommend our school to a friend or colleague?</p>
+                         <input type="radio" id="" onfocus="areaFocus('quesd')" onblur="areaOutOfFocus('quesd')">
+                         <label for="">Very likely</label><br>
+                         <input type="radio" id="" onfocus="areaFocus('quesd')" onblur="areaOutOfFocus('quesd')">
+                         <label for="">somewhat likely</label><br>
+                         <input type="radio" id="" onfocus="areaFocus('quesd')" onblur="areaOutOfFocus('quesd')">
+                         <label for="">unsure</label><br>
+                         <input type="radio" id="" onfocus="areaFocus('quesd')" onblur="areaOutOfFocus('quesd')">
+                         <label for="">Not Very likely</label><br>
+                         <input type="radio" id="" onfocus="areaFocus('quesd')" onblur="areaOutOfFocus('quesd')">
+                         <label for="">Not likely</label>
+                     </div><br><br>
+                     <div class="ques2" id="ques2d">
+                         <p>If not, why?</p>
+                         <textarea name="" id="" cols="40" rows="10" onfocus="areaFocus('ques2d')" onblur="areaOutOfFocus('ques2d')"></textarea>
+                     </div><br><br>
+                     <div class="ques3" id="ques3d">
+                         <p>What could we do to increase your level of satisfaction? </p>
+                         <textarea name="" id="ques3" cols="40" rows="10" onfocus="areaFocus('ques3d')" onblur="areaOutOfFocus('ques3d')"></textarea>
+                     </div><br><br>
+                     <div class="ques4" id="ques4d">
+                         <p>Additional comments</p>
+                         <textarea name="" id="" cols="40" rows="10" onfocus="areaFocus('ques4d')" onblur="areaOutOfFocus('ques4d')"></textarea>
+                     </div>
+     
+                 </div>
+                  <div class="button"><button>Submit</button></div>
+           </div>      
+        </div>
+     
+    </main>     
+</body>     
+     
+</html>     

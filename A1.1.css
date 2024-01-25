@@ -1,0 +1,31 @@
+body{
+    height: 100vh;
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: gray;
+}
+table{
+    background-color: white;
+    width: 50%;
+    border:    1px solid rgb(248, 9, 9);
+}
+img{
+    height: 150px;
+    width: 150px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+td,th{
+border-bottom: 1px solid red;
+border-right: 1px solid red;
+}
+table tr:last-child td{
+border-bottom: none;
+}
+table th:last-child ,
+table td:last-child{
+border-right: none;
+}

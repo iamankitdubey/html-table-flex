@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form 2</title>
+    <link rel="stylesheet" href="form 2.css">
+</head>
+<body>
+    <header><p>Student Survey Form</p></header>
+    <div class="main">
+        <form action="">
+            <label for="name">NAME :</label><br>
+            <input type="text" name="name" id="name" placeholder="Enter your name" ><br><br>
+            <label for="email">EMAIL :</label><br>
+            <input type="email" name="email" id="email" placeholder="enter your email"><br><br>
+            <label for="date">DOB :</label><br>
+            <input type="date" name="date" id="date"><br><br>
+            <label for="age">Age (optional)</label><br>
+            <input type="age" name="age" id="age" placeholder="Age"><br><br>
+            <label for="class">Class</label><br>
+            <input list="class" name="class" id="">
+                <datalist id="class">
+                  <option value="b.tech"></option>
+                  <option value="mca"></option>
+                  <option value="b.sc"></option>
+                  <option value="b.com"></option>
+                  <option value="bca"></option>
+                  <option value="m.tech"></option>
+                </datalist><br><br>
+                 <label for="gender">GENDER :</label>&nbsp;&nbsp;
+                 <input type="radio" id="male" name="gender">
+                 <label for="male">male</label>
+                 <input type="radio" id="female" name="gender">
+                 <label for="female">female</label><br><br>
+
+                 <label for="">SKILL :</label><br>
+                 <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+                 <label for="vehicle1"> HTML</label><br>
+                 <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+                 <label for="vehicle2"> CSS</label><br>
+                 <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+                 <label for="vehicle3"> javascript</label><br><br>
+                
+                 <label for="">Hobbies :</label>&nbsp;&nbsp;
+                 <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+                 <label for="vehicle1"> Singing</label>
+                 <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+                 <label for="vehicle2"> dancing</label>
+                 <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+                 <label for="vehicle3"> Sports</label>
+                 <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+                 <label for="vehicle2"> Others</label><br><br>
+                 <label for="text"> Address :</label><br>
+                 <textarea name="text" placeholder="write full address" cols="50" rows="3" ></textarea><br><br>
+                 <button type="button"><h2>Submit</h2></button>
+                 
+
+        </form>
+
+    </div>
+</body>
+</html>

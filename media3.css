@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.main{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(251, 246, 246);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+.image-box{
+    height: 300px;
+    width: 300px;
+    background-color: aqua;
+    border: 1px solid;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+}
+img{
+    height: 100%;
+    width: 100%;
+}
+
